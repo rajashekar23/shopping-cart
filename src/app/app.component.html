@@ -1,0 +1,65 @@
+
+
+
+<mat-toolbar color="warn" fxLayout="row" fxLayoutAlign="space-around center"><span>
+  <a routerLink='/home'><img
+      src="https://www.robinhq.com/hubfs/ROBIN_may_2018/img/yoursurprise-logo.svg"
+      alt="logo" height='100px' width='180px'></a></span>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <div fxLayout="row" fxLayoutAlign="space-around center">
+
+    <button mat-button [matMenuTriggerFor]="menu"><b>Men</b></button>
+    <mat-menu class="men" #menu="matMenu">
+      <a routerLink='/mens/shirts'> <button mat-menu-item>Shirts</button> </a>
+      <a routerLink='/mens/trousers'> <button mat-menu-item>Trousers</button></a>
+      <a routerLink='/casuals'> <button mat-menu-item>Casuals</button></a>
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu"><b>Women</b></button>
+    <mat-menu class="men" #menu="matMenu">
+      <a routerLink='/shirts'> <button mat-menu-item>Shirts</button> </a>
+      <a routerLink='/trousers'> <button mat-menu-item>Trousers</button></a>
+      <a routerLink='/casuals'> <button mat-menu-item>Casuals</button></a>
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu"><b>Kids</b></button>
+    <mat-menu class="men" #menu="matMenu">
+      <a routerLink='/shirts'> <button mat-menu-item>Shirts</button> </a>
+      <a routerLink='/trousers'> <button mat-menu-item>Trousers</button></a>
+      <a routerLink='/casuals'> <button mat-menu-item>Casuals</button></a>
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu"><b>Home&Living</b></button>
+    <mat-menu class="men" #menu="matMenu">
+      <a routerLink='/shirts'> <button mat-menu-item>Shirts</button> </a>
+      <a routerLink='/trousers'> <button mat-menu-item>Trousers</button></a>
+      <a routerLink='/casuals'> <button mat-menu-item>Casuals</button></a>
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu"><b>Handlooms</b></button>
+    <mat-menu class="men" #menu="matMenu">
+      <a routerLink='/shirts'> <button mat-menu-item>Shirts</button> </a>
+      <a routerLink='/trousers'> <button mat-menu-item>Trousers</button></a>
+      <a routerLink='/casuals'> <button mat-menu-item>Casuals</button></a>
+
+    </mat-menu>
+
+
+  </div>
+
+
+  <input type='text' placeholder='Search...' id='search-text-input' />
+  
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <a routerLink='/carts'><img src='https://image.flaticon.com/icons/svg/726/726496.svg' height="40px" width="60px"></a> 
+    <a routerLink='/carts'><p class='cartname'>Cart</p></a>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <a routerLink='/profiles'><img src='https://image.flaticon.com/icons/svg/145/145842.svg' height="40px" width="60px"></a>
+    <a routerLink='/profiles'><p class='para'>Profile</p></a>
+  </div>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

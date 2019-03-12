@@ -1,0 +1,41 @@
+.shirtimg{
+    width:773px;
+    height: 285px;
+    position: relative;
+    left:40px;
+   
+}
+/* .example-card {
+    max-width: 200px;
+    max-height: 350px;
+    margin-left: 30px;
+    margin-top: 200px;
+    
+    
+  } */
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+  
+  .example-card {
+    width: 180px;
+    height: 410px;
+    margin-left: 20px;
+    margin-top: 200px;
+    
+    
+  }
+  
+ 
+  .example-card img{
+      width: 212px;
+      height: 280px;
+  }
+  .mat-card-actions button{
+      background-color: darkolivegreen;
+      color: white;
+      font-size: 10px;
+  }

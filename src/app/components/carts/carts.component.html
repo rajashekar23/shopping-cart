@@ -1,0 +1,53 @@
+<!-- <p>Hello your cart is Empty</p>
+<img src="https://chillydraji.files.wordpress.com/2015/08/empty_cart.jpeg"> -->
+<!-- <h3>Cart Info</h3>
+<table border="1">
+    <tr>
+        <th>Option</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+    </tr>
+    <tr *ngFor="let item of items">
+        <td align="center">
+            <a (click)="remove(item.product.id)"><button>REMOVE</button></a>
+        </td>
+        <td>{{item.product.id}}</td>
+        <td>{{item.product.name}}</td>
+        <td>
+            <img src="{{item.product.photo}}" width="50">
+        </td>
+        <td>{{item.product.price}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.product.price * item.quantity}}</td>
+    </tr>
+    <tr>
+        <td colspan="6" align="right">Total</td>
+        <td>{{total}}</td>
+    </tr>
+</table> -->
+
+    <div>
+        <mat-card *ngFor="let item of items" height="600px" fxLayout='row' fxLayoutAlign="space-evenly center">
+            <div fxLayout="row" fxLayoutAlign="space-evenly center">
+                <img src="{{ item.product.photo }}" height="160px" width="120px">
+                <div style="margin:10px" fxLayout="column">
+                    <h3>{{ item.product.name }}</h3>
+                    <p style="margin-bottom: 30px">{{ item.product.id }}</p>
+                    <p> Quantity:{{item.quantity }}</p>
+                    <!-- <p>{{item.product.price*item.quantity}}</p> -->
+                </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="space-evenly center">
+                <p>Price:Rs.{{ item.product.price }}</p>
+                <a (click)="remove(item.product.id)"><button>REMOVE</button></a>
+
+            </div>
+            <!-- <div>Total:{{total}}</div> -->
+        </mat-card>
+        <div class='totalprice'><b>Total:Rs.{{total}}</b></div>
+    </div>
+  

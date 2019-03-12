@@ -1,0 +1,21 @@
+<div  class='shirtimg' >
+<img  src="https://static.jabong.com/cms/new-site//1275x470_desktop_1535634014109.webp">
+</div>
+<div fxLayout="row" fxLayoutAlign="space-around center">
+
+
+    <mat-card class="example-card" *ngFor='let product of products'>
+      
+      <img mat-card-image src="{{product.photo}}">
+      <mat-card-content>
+        <p>Model:{{product.id}}</p>
+        <p>{{product.name}}</p>
+        <p>Rs.{{product.price}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a [routerLink]="['/carts',{id:product.id}]"><button mat-button>ADD TO CART</button></a>
+        <button mat-button>BUY NOW</button>
+      </mat-card-actions>
+    </mat-card>
+    </div>
+    
